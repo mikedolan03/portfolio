@@ -1,92 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<title>Michael Dolan - Full Stack Web Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Mike Dolan - Full Stack Web Developer</title>
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" type="text/css" href="grid.css">
+
 	</head>
 	<body>
 		<nav class="navigation">
+			<div class="row">
 			<ul>
-				<li><a href="#about">contact</a></li>
-				<li><a href="">portfolio</a></li>
-				<li><a href="">about</a></li>
+				<li><button class="contact-link">contact</button></li>
+				<li><button class="portfolio-link">portfolio</button></li>
+				<li><button class="about-link">about</button></li>
 			</ul>
+		</div>
 		</nav>
 		<header>
-		<div class="hero">
+			<div class="row">
+		<div class="hero col-4">
 			<img class="hero-img" src="bear2.jpg" alt="the bear is a metaphor for code..." />
 		</div>
-		<div class="headline">
-			Hi I'm Mike. I'm a full stack web developer with experience in education, content marketing, game development and politics. I love to be constantly learning new things and applying my skills to solve problems and create exciting applications.
+		<div class="headline col-8">
+			<p>Hello, I'm Mike.</p><p>I fight bears...no wait, actually I'm a full stack web developer who enjoys wrestling with challenging problems that can be solved with code.</p>
 		</div>
+	</div>
 		</header>
 		<main><a name="about"></a>
-			<section class="about">
-				<div class="intro">
-					<h2>About</h2>
-					<p>Ever since I got my hands on my first computer (my dad's black and orange screen suitcased-sized work laptop in the early '90s) I've been creating things with code. From making 'Choose you own adventure' games using Goto: statements in qBasic to building virtual reality worlds using Unity3D, I've always had a passion for programming. That's why I decided to join Thinkful's Full Stack Flex Web Developer program and finally make a switch into a career I always wanted to explore. At Thinkful, I built up my HTML, CSS and JavaScript skills to create responsive, mobile-first web applications as well as learned state-of-the-art web development techniques using Node and React.</p>
+			<section class="about" id="about">
+				<h2>About</h2>
+				<div class="row">
+				<div class="intro col-6">
+					<h3>Bio</h3>
+					<p>Ever since I got my hands on my first computer (my dad's black and orange screen suitcased-sized work laptop in the early '90s), I've been creating things with code. From making 'Choose you own adventure' games using Goto: statements in qBasic to building virtual reality worlds using Unity3D, I've always had a passion for programming. That's why I made the switch into a career I've always wanted to explore. I love learning new languages, frameworks, and ways to solve problems to make cool things through coding.</p>
 					<p>
-					When I'm not coding web apps on my laptop, I might be on my other computer prototyping a video game or playing one, exploring Virginia's hiking trails with my wife and son, brewing gluten free beer or figuring out what the next exciting travel destination our family will be headed to.
+					When I'm not coding web apps on my laptop, I might be prototyping a new video game, hiking, brewing gluten-free beer or traveling with my wife and son.
 					</p>
 				</div>
-				<div class="skills">
-					<h2>Skills</h2>
+				<div class="skills col-6">
+					<h3>Skills</h3>
+					<p>
 					<ul>
 						<li><span class="bold-text">Frontend:</span> JavaScript, React, jQuery, HTML5, CSS3</li> 
 						<li><span class="bold-text">Backend:</span> Node, MongoDB, Mongoose, NPM, Implementing REST APIs</li>
 						<li><span class="bold-text">Testing/Deployment:</span> Continuous Integration with Travis CI and Heroku, Testing with Mocha/Chai, Enzyme/Jest</li>
 						<li><span class="bold-text">Related:</span> Git, GitHub, Extensive written & verbal communication experience</li>
+					</ul>
+				</p>
+				</div>
 				</div>			
 			</section>
-			<section class ="projects"><a name="projects"></a>
-			<div class="project">
-				<div class="screenshot"></div>
-				<div class="project-content">
-					<h3>Symptom Hacker</h3>
-					<p>Symptom Hacker is a Full Stack React/Redux app with a Node backend that helps users figure out what foods are causing their health problems. Users log food and symptoms into the app, then the app generates an interactive dashboard displaying food and symptom correlations. Users can select different date ranges to examine, choose different symptoms to review and watch as the interactive UI updates on the fly.</p>
-					<p><span class="bold-text">Technology Used: </span>React, Redux, Chart.js Moment.js Node Express MongoDB Mocha/Chai Enzyme </p>
-					<p>
-					<a href="https://blooming-lake-36867.herokuapp.com/">Live Demo</a>
-					<a href="https://github.com/mikedolan03/myhealthtarget">Git Repo</a>
-					</p>
+			<section class ="projects" id="projects"><a name="projects"></a>
+				<h2>Portfolio</h2>
+				<div class="project">
+					<div class="row">
+					<div class="screenshot col-6"><img class="screen-img" src="symptomhacker.png"></div>
+					<div class="project-content col-6">
+						<h3>Symptom Hacker</h3>
+						<p>Symptom Hacker is a Full Stack React/Redux app with a Node backend that helps users figure out what foods are causing their health problems. Users log food and symptoms into the app, then the app generates an interactive dashboard displaying food and symptom correlations. Users can select different date ranges to examine, choose different symptoms to review and watch as the interactive UI updates on the fly.</p>
+						<p><span class="bold-text">Technology Used: </span>React, Redux, Chart.js Moment.js Node Express MongoDB Mocha/Chai Enzyme </p>
+						<p>
+						<a href="https://blooming-lake-36867.herokuapp.com/">Live Demo</a>
+						<a href="https://github.com/mikedolan03/myhealthtarget">Git Repo</a>
+						</p>
+					</div>
 				</div>
-			</div> 
-			<div class="project">
-				<div class="screenshot"></div>
-				<div class="project-content">
-					<h3>Travel Bucket</h3>
-					<p>It's a big world out there. What avid globetrotter doesn't have a bucket list of places to go? Travel Bucket is a bucket list app for travel enthusiasts that allows travelers to search for new places to visit, list and plan trips, as well as check off and review places they visit on their bucket list.
-					</p>
-					<p><span class="bold-text">Technology Used: </span>Node, Express, MongoDB, HTML5, CSS, Javascript, jQuery, Mocha/Chai 
-					</p>
-					<p>
-						<a href="https://tranquil-sea-63131.herokuapp.com/">Live Demo</a>
-						<a href="https://github.com/mikedolan03/travelbucket">Git Repo</a>
-					</p>
-			</div> 
-			<div class="project">
-				<div class="screenshot"></div>
-				<div class="project-content">
-					<h3>Brew Hikers</h3>
-					<p>Brew Hikers is a beer enthusiast's hiking trip planner. Users can enter a place they'd like to explore, find a hike nearby and then choose from an assortment of breweries in the surrounding area. Brew Hikers choose one hike and multiple breweries to complete their trip. All of these locations are then provided neatly all in one place on the trip plan page, complete with a list of locations, a marked Google Map, and driving directions to make the road trip easier.
-					</p>
-					<p><span class="bold-text">Technology Used: </span>HTML5, CSS3, Javascript, jQuery, Google Maps API w/ Places Library, The Hiking Project API
-					</p>
-					<p>
-						<a href="https://mikedolan03.github.io/brewhikers/">Live Demo</a>
-						<a href="https://github.com/mikedolan03/brewhikers">Git Repo</a>
-					</p>
-			</div> 
+				</div> 
+				<div class="project">
+					<div class="row">
+					<div class="screenshot col-6"><img class="screen-img" src="travelbucket.png"></div>
+					<div class="project-content col-6">
+						<h3>Travel Bucket</h3>
+						<p>It's a big world out there. What avid globetrotter doesn't have a bucket list of places to go? Travel Bucket is a bucket list app for travel enthusiasts that allows travelers to search for new places to visit, list and plan trips, as well as check off and review places they visit on their bucket list.
+						</p>
+						<p><span class="bold-text">Technology Used: </span>Node, Express, MongoDB, HTML5, CSS, Javascript, jQuery, Mocha/Chai 
+						</p>
+						<p>
+							<a href="https://tranquil-sea-63131.herokuapp.com/">Live Demo</a>
+							<a href="https://github.com/mikedolan03/travelbucket">Git Repo</a>
+						</p>
+					</div> 
+				</div>
+				</div>
+				<div class="project">
+					<div class="row">
+					<div class="col-6"><div class="screenshot"><div class="screenshot-content"><img class="screen-img" src="brewhikers.png"></div></div></div>
+					<div class="project-content col-6">
+						<h3>Brew Hikers</h3>
+						<p>Brew Hikers is a beer enthusiast's hiking trip planner. Users can enter a place they'd like to explore, find a hike nearby and then choose from an assortment of breweries in the surrounding area. Brew Hikers choose one hike and multiple breweries to complete their trip. All of these locations are then provided neatly all in one place on the trip plan page, complete with a list of locations, a marked Google Map, and driving directions to make the road trip easier.
+						</p>
+						<p><span class="bold-text">Technology Used: </span>HTML5, CSS3, Javascript, jQuery, Google Maps API w/ Places Library, The Hiking Project API
+						</p>
+						<p>
+							<a href="https://mikedolan03.github.io/brewhikers/">Live Demo</a>
+							<a href="https://github.com/mikedolan03/brewhikers">Git Repo</a>
+						</p>
+				  </div>
+				</div>
+				</div> 
 			</section>
-			<section>
-				<div>
-				<h2>Contact</h2>
-				<a href="mailto:mike@mikedolan.io">Email me</a>
-				<a href="https://www.linkedin.com/in/mike-dolan03/">LinkedIn</a>
-				<a href="https://github.com/mikedolan03">GitHub</a>
-				<a href="https://twitter.com/badgerheadgames">Twitter</a>	
+			<section class="contact" id="contact"><a name="contact"></a>
+				<div class="row">
+					<div class="col-12">
+						<h2>Contact</h2>
+						<a href="mailto:mike@mikedolan.io">Email me</a>
+						<a href="https://www.linkedin.com/in/mike-dolan03/">LinkedIn</a>
+						<a href="https://github.com/mikedolan03">GitHub</a>
+						<a href="https://twitter.com/badgerheadgames">Twitter</a>	
+					</div>
 				</div>
 			</section>
 		</main>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="index.js"></script>
 	</body>
 </html>
