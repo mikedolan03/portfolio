@@ -109,6 +109,10 @@ h1, h2, h3 {
 	color: #5c5c97;
 }
 
+.skills {
+	margin-top: 30px;
+}
+
 .hero-img {
 	width: 100%;
 	height: 100%;
@@ -276,6 +280,10 @@ font-size: 42px;
 
 .project.first {
 	margin-top: 50px;
+}
+
+.skills {
+	margin-top: 0px;
 }
 
 }
