@@ -12,9 +12,7 @@
 		<nav class="navigation">
 			<div class="row">
 			<ul>
-				<li><button class="toggle-theme"><span class="sun"><i class="far fa-sun"></i></span><span class="moon hide"><i class="fas fa-moon"></i></span>
-
-</button>
+				<li><span title="Change color theme"><button class="toggle-theme"><span class="sun"><i class="far fa-sun"></i></span><span class="moon hide"><i class="fas fa-moon"></i></span></button></span></li>
 				<li><button class="contact-link">contact</button></li>
 				<li><button class="portfolio-link">portfolio</button></li>
 				<li><button class="about-link">about</button></li>
@@ -31,7 +29,7 @@
 		</div>
 	</div>
 		</header>
-		<main><a name="about"></a>
+		<main><a name="about" class="anchors"></a>
 			<section class="about" id="about">
 				<h2>About</h2>
 				<div class="row">
@@ -44,22 +42,29 @@
 				</div>
 				<div class="skills col-6">
 					<h3>Skills</h3>
+					<p class="text-32"><i class="fab fa-js-square js"></i> <i class="fab fa-react react"></i> <i class="fab fa-node node"></i> <i class="fab fa-html5 html5"></i> <i class="fab fa-css3-alt css3"></i> <i class="fab fa-npm npm"></i> <i class="fab fa-github"></i></p>
 					<p>
 					<ul>
-						<li><span class="bold-text">Frontend:</span> JavaScript, React, jQuery, HTML5, CSS3</li> 
-						<li><span class="bold-text">Backend:</span> Node, MongoDB, Mongoose, NPM, Implementing REST APIs</li>
-						<li><span class="bold-text">Testing/Deployment:</span> Continuous Integration with Travis CI and Heroku, Testing with Mocha/Chai, Enzyme/Jest</li>
-						<li><span class="bold-text">Related:</span> Git, GitHub, Extensive written & verbal communication experience</li>
+						<li><span class="bold-text accent-color">Frontend:</span> <span class="bold-text">JavaScript, React,</span> jQuery, HTML5, CSS3</li> 
+						<li><span class="bold-text accent-color">Backend:</span> <span class="bold-text">Node,</span> MongoDB, Mongoose, NPM, Implementing REST APIs</li>
+						<li><span class="bold-text accent-color">Testing/Deployment:</span> Continuous Integration with Travis CI and Heroku, Testing with Mocha/Chai, Enzyme/Jest</li>
+						<li><span class="bold-text accent-color">Related:</span> Git, GitHub, Unity3D, C#, Extensive written & verbal communication experience, <span class="bold-text">Willingness to learn new things!</span></li>
 					</ul>
 				</p>
 				</div>
 				</div>			
 			</section>
-			<section class ="projects" id="projects"><a name="projects"></a>
+			<section class ="projects" id="projects"><a class="anchors" name="projects"></a>
 				<h2>Portfolio</h2>
-				<div class="project">
+				<div class="project first">
 					<div class="row">
-					<div class="screenshot col-6"><img class="screen-img" src="symptomhacker.png"></div>
+					<div class="col-6">
+						<div class="screenshot">
+							<div class="screenshot-content">
+								<a href="https://blooming-lake-36867.herokuapp.com/"><img class="screen-img" src="symptomhacker.png"></a>
+							</div>
+						</div>
+					</div>
 					<div class="project-content col-6">
 						<h3>Symptom Hacker</h3>
 						<p><i class="fab fa-react react"></i> <i class="fab fa-node node"></i> <i class="fab fa-js-square js"></i> <i class="fab fa-html5 html5"></i> <i class="fab fa-css3-alt css3"></i></p>
@@ -74,7 +79,13 @@
 				</div> 
 				<div class="project">
 					<div class="row">
-					<div class="screenshot col-6"><img class="screen-img" src="bucket2.png"></div>
+					<div class="col-6">
+						<div class="screenshot">
+							<div class="screenshot-content">
+								<a href="https://tranquil-sea-63131.herokuapp.com/"><img class="screen-img" src="bucket2.png"></a>
+							</div>
+						</div>
+					</div>
 					<div class="project-content col-6">
 						<h3>Travel Bucket</h3>
 						<p><i class="fab fa-node node"></i> <i class="fab fa-js-square js"></i> <i class="fab fa-html5 html5"></i> <i class="fab fa-css3-alt css3"></i></p>
@@ -91,7 +102,13 @@
 				</div>
 				<div class="project">
 					<div class="row">
-					<div class="col-6"><div class="screenshot"><div class="screenshot-content"><img class="screen-img" src="brewhikers.png"></div></div></div>
+					<div class="col-6">
+						<div class="screenshot">
+							<div class="screenshot-content">
+								<a href="https://mikedolan03.github.io/brewhikers/"><img class="screen-img" src="brewhikers.png"></a>
+							</div>
+						</div>
+					</div>
 					<div class="project-content col-6">
 						<h3>Brew Hikers</h3>
 						<p><i class="fab fa-js-square js"></i> <i class="fab fa-html5 html5"></i> <i class="fab fa-css3-alt css3"></i></p>
@@ -107,15 +124,15 @@
 				</div>
 				</div> 
 			</section>
-			<section class="contact" id="contact"><a name="contact"></a>
+			<section class="contact" id="contact"><a name="contact" class="anchors"></a>
 				<div class="row">
 					<div class="col-12">
 						<h2>Contact</h2>
 						<div class="contact-links">
-							<a href="mailto:mike@mikedolan.io"><i class="far fa-envelope"></i></a>
-							<a href="https://www.linkedin.com/in/mike-dolan03/"><i class="fab fa-linkedin"></i></a>
-							<a href="https://github.com/mikedolan03"><i class="fab fa-github"></i></a>
-							<a href="https://twitter.com/badgerheadgames"><i class="fab fa-twitter-square"></i></a>	
+							<a href="mailto:mike@mikedolan.io" title="Send me an email"><i class="far fa-envelope"></i></a>
+							<a href="https://www.linkedin.com/in/mike-dolan03/" title="Find me on LinkedIn"><i class="fab fa-linkedin"></i></a>
+							<a href="https://github.com/mikedolan03" title="Check out my GitHub"><i class="fab fa-github"></i></a>
+							<a href="https://twitter.com/badgerheadgames" title="Follow me on Twitter"><i class="fab fa-twitter-square"></i></a>	
 						</div>
 					</div>
 				</div>
