@@ -239,6 +239,8 @@ font-size: 32px;
 .text-32 {
 	font-size: 32px;
 }
+
+
 @media only screen and (min-width: 640px) {
 
 body {
@@ -260,7 +262,7 @@ nav li button {
 }
 
 .screen-img {
-	width: 400px;
+	width: 100%;
 	height: auto;
 	max-height: 400px;
 	object-fit: contain;
