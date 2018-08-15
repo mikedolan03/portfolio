@@ -25,7 +25,15 @@ p {
 	text-align: justify;
 	padding-left: 10px;
 	padding-right: 10px;
+	
+}
+
+.dark-theme p {
 	font-weight: 300;
+}
+
+.light-theme p {
+	font-weight: 400;
 }
 
 .headline p {
