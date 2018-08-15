@@ -174,12 +174,18 @@ nav li button {
     display: block;
     text-align: center;
     margin-top: 5px;
+    margin-left: 5px; 
+    margin-right: 5px;
     padding: 0;
     padding-left: 5px;
     padding-right: 5px;
     text-decoration: none;
     border-style: none; 
     background-color: transparent;
+}
+
+.toggle-theme {
+	margin-right: 0;
 }
 
 .dark-theme nav li button {
@@ -257,6 +263,8 @@ h1, h2, h3 {
 
 nav li button {
   	font-size: 20px;
+    margin-left: 10px; 
+    margin-right: 10px;
   }
 
 .hero {
