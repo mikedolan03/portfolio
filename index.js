@@ -1,6 +1,7 @@
 
 function main() {
 
+let darkTheme = true;
 
 	$('.contact-link').on('click', function (event) {
 			event.preventDefault();
@@ -15,6 +16,24 @@ function main() {
 	$('.portfolio-link').on('click', function (event) {
 			event.preventDefault();
 			scrollToPortfolio();
+		}); 
+
+		$('.toggle-theme').on('click', function (event) {
+			event.preventDefault();
+			
+			if(darkTheme) {
+				darkTheme = false;
+				$('body').addClass('light-theme').removeClass('dark-theme'); 
+				$('.sun').addClass('hide');
+				$('.moon').removeClass('hide'); 
+
+			} else {
+				darkTheme = true;
+				$('body').addClass('dark-theme').removeClass('light-theme'); 
+ 				$('.sun').removeClass('hide');
+				$('.moon').addClass('hide'); 
+			}
+
 		}); 
 
 

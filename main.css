@@ -5,10 +5,36 @@
 body {
   font-family: 'Lato', sans-serif;
   font-size: 20px;
-  background-color: #181818;
-  color: white;
   text-align: center;
   line-height: 1.5;
+}
+
+.dark-theme {
+	background-color: #181818;
+  color: white;
+}
+
+.light-theme {
+	background-color: #fbfbfb;
+	color: #4c4c4c;
+}
+
+p {
+	margin: 0;
+	margin-top: 5px;
+}
+
+a {
+	padding: 5px;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.hide {
+	display: none;
 }
 
 .bold-text {
@@ -25,6 +51,10 @@ header {
 	margin-bottom: 	20px;
 }
 
+section {
+	margin-top: 50px;
+}
+
 .hero {
 	
 }
@@ -34,9 +64,41 @@ h1, h2, h3 {
 	margin-bottom: 	0;
 }
 
+.dark-theme h1 {
+	color: #9595ff;
+}
+
+.light-theme h1 {
+	color: #5c5c97;
+}
+
+.dark-theme h2 {
+	color: #9595ff;
+}
+
+.light-theme h2 {
+	color: #5c5c97;
+}
+
+.dark-theme h3 {
+	color: #9595ff;
+}
+
+.light-theme h3 {
+	color: #5c5c97;
+}
+
+.dark-theme .headline {
+	color: #9595ff;
+}
+
+.light-theme .headline {
+	color: #5c5c97;
+}
+
 .hero-img {
-	width: 200px;
-	height: 200px;
+	width: 100%;
+	height: 100%;
 	border-radius: 50%; 
 	object-fit: cover;
 }
@@ -46,14 +108,14 @@ h1, h2, h3 {
 }
 
 .screen-img {
-	width: 300px;
+	width: 250px;
 	height: auto;
+	max-height: 250px;
 	object-fit: contain;
 }
 
 .screenshot {
 	display: 	table;	
-	width: 	100%;	
 }
 
 .screenshot-content {
@@ -63,7 +125,7 @@ h1, h2, h3 {
 }
 
 .project {
-	margin-top: 30px;
+	margin-top: 50px;
 }
 
 nav {
@@ -85,7 +147,6 @@ nav li button {
 	  font-family: 'Lato', sans-serif;
   	font-size: 12px; 
     display: block;
-    color: white;
     text-align: center;
     margin-top: 5px;
     padding: 0;
@@ -94,6 +155,14 @@ nav li button {
     text-decoration: none;
     border-style: none; 
     background-color: transparent;
+}
+
+.dark-theme nav li button {
+	color:  white;
+}
+
+.light-theme nav li button {
+	color: black;
 }
 
 nav li button:hover {
@@ -105,20 +174,64 @@ nav li button:hover {
 	margin-bottom: 	20px;
 }
 
+.contact-links {
+font-size: 32px; 
+}
+
+.light-theme a {
+	color: #5c5c97;
+}
+
+.dark-theme a {
+	color: #9595ff;
+}
+
+.react {
+	color: #61dbfb;
+}
+
+.html5 {
+	color: #e44f29;
+}
+
+.css3 {
+	color: #039ae4;
+}
+
+.js {
+	color: #f0db4f;
+}
+
+.node {
+	color: #7fca0b;
+}
 @media only screen and (min-width: 640px) {
 
 nav li button {
   	font-size: 20px;
   }
 
+.hero {
+	margin-top: 30px;
+}
+
 .screen-img {
 	width: 400px;
 	height: auto;
+	max-height: 400px;
 	object-fit: contain;
+}
+
+.screenshot {
+	margin-top: 35px;
 }
 
 .headline {
 	font-size: 	32px; 
+}
+
+.contact-links {
+font-size: 42px; 
 }
 
 }
