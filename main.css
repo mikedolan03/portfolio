@@ -135,6 +135,8 @@ h1, h2, h3 {
 
 .screenshot {
 	display: 	table;	
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .screenshot-content {
